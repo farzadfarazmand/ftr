@@ -1,0 +1,7 @@
+https://javadl.oracle.com/webapps/download/GetFile/1.8.0_321-b07/df5ad55fdd604472a86a45a217032c7d/windows-i586/jdk-8u321-docs-all.zip
+https://javadl.oracle.com/webapps/download/AutoDL?BundleId=245819_df5ad55fdd604472a86a45a217032c7d
+https://javadl.oracle.com/webapps/download/AutoDL?BundleId=245829_df5ad55fdd604472a86a45a217032c7d
+https://dl.google.com/android/repository/sdk-tools-windows-4333796.zip
+https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
+https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US
+https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=win64&lang=en-US
