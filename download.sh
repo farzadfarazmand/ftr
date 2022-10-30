@@ -1,14 +1,21 @@
 #!/bin/bash
 
-# Create an array files that contains list of filenames
-files=($(< urls.txt))
+urls=(
+        "https://releases.ubuntu.com/22.04/ubuntu-22.04.1-desktop-amd64.iso"
+        "https://releases.ubuntu.com/22.04/ubuntu-22.04.1-live-server-amd64.iso"
+        "http://ftp.antilo.de/pub/linux/centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-DVD-2207-02.iso"
+)
 
-rm -rf ~/dl
-mkdir ~/dl
+range=5
+number=$((RANDOM % range))
 
-# Read through the url.txt file and execute wget command for every filename
-while IFS='=| ' read -r param uri; do 
-    for file in "${files[@]}"; do 
-        wget -c "${uri}${file}" -p ~/dl/
+echo "--------------------------Random number is : ${number}---------------------------------"
+
+for ((run=1; run <= number; run++)); do
+    echo "----------------------Downloading files for the ${run} time(s)----------------------------"
+    rm -rf ~/dl
+    mkdir ~/dl
+    for url in ${urls[@]}; do
+        wget -i $url -P ~/dl/
     done
-done < url.txt
+done
